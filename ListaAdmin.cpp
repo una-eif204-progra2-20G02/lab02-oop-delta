@@ -16,19 +16,19 @@ ListaAdmin::~ListaAdmin() {
 }
 
 void ListaAdmin::agregarAdministrative(Administrative* ad) {
-	primero = new NodoAdmin(p, primero);
+	primero = new NodoAdmin(ad, primero);
 }
 
 string ListaAdmin::toString() {
-	stringstream r;
+	stringstream s;
 	NodoAdmin* actual = primero;
 	Administrative* _Administrative;
 
 	while (actual != NULL) {
 		_Administrative = actual->obtenerDato();
-		r << _Administrative->toString();
+		s << _Administrative->toString();
 		actual = actual->obtenerSiguiente();
 	}
 
-	return r.str();
+	return s.str();
 }
