@@ -8,22 +8,22 @@
 
 class Professor: public Person {
   private:
-   double monthlySalary;
-   double commissionRate;
+   double monthly_salary;
+   double commission_rate;
   
  public:
-  Profesor(double=0,double=0);
-  Profesor(string=" ", string=" ", int= 0,double=0,double=0);
-  virtual ~Profesor();
+  Professor(double,double);
+  Professor(string, string,int,double,double);
+  virtual ~Professor();
 
-  double getMonthlySalary();
-  void setMonthlySalary(double);
+  double get_monthly_salary() const;
+  void set_monthly_salary(double);
 
-  double getCommissionRate();
-  void setCommissionRate(double);
+  double get_commission_rate();
+  void set_commission_rate(double);
 
   double salary()const;
-  string toString()const;
+  string to_string()const;
 };
 
 #endif //LAB02_OOP_PROFESSOR_H

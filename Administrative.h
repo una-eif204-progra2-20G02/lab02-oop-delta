@@ -7,18 +7,17 @@
 #include "Person.h"
 
 class Administrative: public Person {
- private:
-  double monthlySalady;
+  double monthly_salary;
 
- puclic:
-  Administrative(double=0);
-  Administrative(string = " ", string=" ", int= 0, double=0);
+public:
+  Administrative(double);
+  Administrative(string, string, int, double);
   ~Administrative();
 
-  void setMonthlySalary(double);
-  double getMonthlySalary();
+  void set_monthly_salary(double);
+  double get_monthly_salary() const;
 
-  double salary()const;
+  void salary();
   virtual string toString() const;
 };
 

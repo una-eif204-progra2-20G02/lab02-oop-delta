@@ -14,29 +14,26 @@ using namespace std;
  * Abstract Class of Person
  */
 class Person {
-  private:
   string nom;
   string apellido;
   int id;
 
   public:
+    Person();
+    Person(string, string, int);
 
-  Person(string=" ", string=" ", int= 0);
+    virtual ~Person();
 
- virtual ~Person();
+    string get_nom();
+    void set_nom(string);
 
- string getNom();
- void setNom(string);
+    string get_appellido();
+    void set_apellido(string);
 
- string getAppellido();
- void setApellido(string);
- 
- int getID();
- void setID(int);
+    int get_ID();
+    void set_ID(int);
 
- virtual double salary()const=0;
- virtual string toString()const=0;
+    virtual double salary()const=0;
+    virtual string to_string()const=0;
 };
-
-
 #endif //LAB02_OOP_PERSON_H

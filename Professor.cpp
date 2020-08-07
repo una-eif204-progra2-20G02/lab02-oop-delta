@@ -6,43 +6,40 @@
 #include <sstream>
 #include "Professor.h"
 
-Profesor::(double salary,double commission){
-  monthlySalary=salary;
-  commissionRate=commission;
+Professor::Professor(double salary,double commission){
+  monthly_salary=salary;
+  commission_rate=commission;
 }
 
-Profesor::Profesor(string nom_, string appellido_, int id_,double salary,double commission):Person(nom_,appellido_,id_){
-  monthlySalary=salary;
-  commissionRate=commission;
+Professor::Professor(string nom_, string appellido_, int id_,double salary,double commission):Person(nom_,appellido_,id_){
+  monthly_salary=salary;
+  commission_rate=commission;
 }
 
-virtual Profesor::~Profesor(){ } 
+Professor::~Professor(){ }
 
-double Profesor::getMonthlySalary(){
-  return monthlySalary;
+double Professor::get_monthly_salary() const {
+  return monthly_salary;
 }
-void Profesor::setMonthlySalary(double month){
-  monthlySalary=month;
-}
-
-double Profesor::getCommissionRate(){
-  return commissionRate;
-}
-void Profesor::setCommissionRate(double com){
-  commission=com;
+void Professor::set_monthly_salary(double month){
+  monthly_salary=month;
 }
 
-
-double Profesor::salary()const{
-  return monthlySalary-commissionRate;
+double Professor::get_commission_rate(){
+  return commission_rate;
+}
+void Professor::set_commission_rate(double com){
+  commission_rate=com;
 }
 
-string Profesor::toString()const{
-  stringstream s;
+double Professor::salary()const{
+  return monthly_salary-commission_rate;
+}
 
-  s<<"Professor Information : " <<getNom()<" "<<getApellido()<endl;
-  s<<"Doc ID: "<<getId()<<endl;
-  s<<"Monthly Salary"<<getMonthlySalary()<<endl;
-
+string Professor::to_string()const{
+        stringstream s;Person*punt;
+        s<<"Professor Information : " <<punt->get_nom()<<" "<<punt->get_appellido()<<endl;
+        s<<"Doc ID: "<<punt->get_ID()<<endl;
+        s<<"Monthly Salary"<<get_monthly_salary()<<endl;
   return s.str();
 }

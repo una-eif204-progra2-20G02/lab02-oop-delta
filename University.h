@@ -8,40 +8,35 @@
 #include <vector>
 #include "Professor.h"
 #include "Administrative.h"
-#include "Lista.h"
 
 class University {
- private: 
   string name;
 
   Professor* professor;
-  Administrative* admistrative;
+  Administrative* administrative;
 
-  
-  Professor* professorList[10];
-  Administrative* administrativeList[10];
+  Professor* professor_list[10];
+  Administrative* administrative_list[10];
 
   public:
 
   University();
-  University(string = " ");
-  University(string=" ",Professor*=NULL,Administrative*=NULL);
+  University(string);
+  University(string,Professor*,Administrative*);
 
-  string getName();
-  void serName(string);
+  string get_name();
+  void set_name(string);
 
-  Professor* getProfessor();
-  void  setProfessor(Professor*);
+  Professor* get_Professor();
+  void  set_Professor(Professor*);
   
-  Administrative* getAdministrative();
-  void setAdministrative(Administrative*);
+  Administrative* get_Administrative();
+  void set_Administrative(Administrative*);
 
-  Professor** getProfessorList();
-  Administrative** getAdministrativeList();
+  Professor** get_Professor_List();
+  Administrative** get_Administrative_List();
 
-  void AddProfessor(Professor*);
-  void AddAdministrative(Administrative*);
+  void Add_Professor(Professor*);
+  void Add_Administrative(Administrative*);
 };
-
-
 #endif //LAB02_OOP_UNIVERSITY_H
