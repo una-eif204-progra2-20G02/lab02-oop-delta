@@ -1,7 +1,6 @@
 //
 // Created by Maikol Guzman on 8/2/20.
 //
-#include <sstream>
 #include "Person.h"
 Person::Person() {}
 Person::Person(string nom_, string apellido_, int id_){
