@@ -14,9 +14,10 @@ using namespace std;
  * Abstract Class of Person
  */
 class Person {
-  string nom;
-  string apellido;
-  int id;
+  private:
+   string nom;
+   string apellido;
+   int id;
 
   public:
     Person();

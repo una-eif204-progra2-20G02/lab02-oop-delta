@@ -18,7 +18,7 @@ public:
   double get_monthly_salary() const;
 
   void salary();
-  virtual string toString() const;
+  virtual string to_string() const;
 };
 
 #endif //LAB02_OOP_ADMINISTRATIVE_H

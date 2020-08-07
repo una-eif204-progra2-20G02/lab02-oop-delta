@@ -20,7 +20,7 @@ double Administrative::get_monthly_salary() const { return monthly_salary;}
 
 void Administrative::salary(){}
 
-string Administrative::toString() const{
+string Administrative::to_string() const{
   stringstream x;Person*per;
   x<<"Administrative Information : " <<per->get_nom()<<" "<<per->get_appellido()<<endl;
   x<<"Doc ID: "<<per->get_ID()<<endl;

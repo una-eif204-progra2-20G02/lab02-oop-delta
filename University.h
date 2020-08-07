@@ -8,6 +8,8 @@
 #include <vector>
 #include "Professor.h"
 #include "Administrative.h"
+#include "ListaAdmin.h"
+#include "ListaProfessor.h"
 
 class University {
   string name;
@@ -17,6 +19,8 @@ class University {
 
   Professor* professor_list[10];
   Administrative* administrative_list[10];
+  int num_Profe;
+  int num_Admin;
 
   public:
 
