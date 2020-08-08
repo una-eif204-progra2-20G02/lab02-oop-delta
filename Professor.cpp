@@ -33,7 +33,7 @@ void Professor::set_commission_rate(double com){
 }
 
 double Professor::salary()const{
-  return monthly_salary*0.05);
+  return monthly_salary*0.05;
 }
 
 string Professor::to_string()const{

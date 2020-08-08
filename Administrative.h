@@ -17,8 +17,8 @@ public:
   void set_monthly_salary(double);
   double get_monthly_salary() const;
 
-  void salary();
-  virtual string to_string() const;
+  double salary() const;
+  string to_string() const;
 };
 
 #endif //LAB02_OOP_ADMINISTRATIVE_H

@@ -18,7 +18,7 @@ void Administrative::set_monthly_salary(double monthlySalary) {
 
 double Administrative::get_monthly_salary() const { return monthly_salary;}
 
-void Administrative::salary(){}
+double Administrative::salary() const{ }
 
 string Administrative::to_string() const{
   stringstream x;Person*per;
