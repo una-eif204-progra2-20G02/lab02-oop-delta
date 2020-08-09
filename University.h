@@ -10,29 +10,31 @@
 #include "Administrative.h"
 
 class University {
-private:
-  vector<Professor> List_Professor;
-  vector<Administrative> List_Administrative;
+ private:
   string name;
-  Professor* professor;
-  Administrative* administrative;
 
-  public:
+  vector<Professor> professor_List;
+  vector<Administrative> administrative_List;
+  
+  Professor professor;
+  Administrative administrative;
+
+ public:
   University();
   University(string);
-  University(string,Professor*,Administrative*);
+  University(string,Professor,Administrative);
 
   string get_name();
   void set_name(string);
 
-  Professor* get_Professor();
-  void  set_Professor(Professor*);
+  Professor get_Professor();
+  void  set_Professor(Professor);
   
-  Administrative* get_Administrative();
-  void set_Administrative(Administrative*);
+  Administrative get_Administrative();
+  void set_Administrative(Administrative);
 
-  Professor get_Professor_List();
-  Administrative get_Administrative_List();
+  std::vector<Professor> get_Professor_List();
+  std::vector<Administrative> get_Administrative_List();
 
   void Add_Professor(Professor);
   void Add_Administrative(Administrative);
