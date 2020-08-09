@@ -26,13 +26,24 @@
   Administrative University::get_Administrative_List(){}
 
   void University::Add_Professor(Professor prof){
-    vector_prof.push_back(prof);
+      for (int cont = 0; cont < vector_prof.size(); cont++) {
+          vector_prof.push_back(vector_prof[cont]);
+          vector_prof[0]=prof;
+      }
+      //vector_prof.push_back(prof);
   }
 
   void University::Add_Administrative(Administrative admin){
-    /*for (int cont = 0; cont < vector_admin.size(); cont++) {
+    for (int cont = 0; cont < vector_admin.size(); cont++) {
       vector_admin.push_back(vector_admin[cont]);
-    }*/
+      vector_admin[0]=admin;
+    }
+    //vector_admin.push_back(admin);
+  }
 
-   // vector_admin.push_back(admin);
+  void University::command(){
+    //University*program=new University();
+    Person*prof1=new Professor("Mike","Guzman",1234567890,1575000.00,0.05);
+    Person*prof2=new Professor("Pedro","Sanchez",1286608618,1050000.00,0.05);
+    cout<<prof1->to_string();
   }

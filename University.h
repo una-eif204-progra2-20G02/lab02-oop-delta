@@ -5,6 +5,7 @@
 #ifndef LAB02_OOP_UNIVERSITY_H
 #define LAB02_OOP_UNIVERSITY_H
 
+#include <iostream>
 #include <vector>
 #include "Professor.h"
 #include "Administrative.h"
@@ -36,5 +37,6 @@ private:
 
   void Add_Professor(Professor);
   void Add_Administrative(Administrative);
+  void command();
 };
 #endif //LAB02_OOP_UNIVERSITY_H

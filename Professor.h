@@ -12,8 +12,8 @@ class Professor: public Person {
    double commission_rate;
   
  public:
-  Professor(double,double);
-  Professor(string, string,int,double,double);
+  //Professor(double,double);
+  Professor(string,string,int,double,double);
   virtual ~Professor();
 
   double get_monthly_salary() const;
@@ -22,8 +22,8 @@ class Professor: public Person {
   double get_commission_rate();
   void set_commission_rate(double);
 
-  double salary()const;
-  string to_string()const;
+  virtual double salary()const;
+  virtual string to_string()const;
 };
 
 #endif //LAB02_OOP_PROFESSOR_H

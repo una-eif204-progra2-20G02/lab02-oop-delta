@@ -7,11 +7,11 @@ Person::Person(string nom_, string apellido_, int id_){
     nom=nom_;
     apellido=apellido_;
     id=id_;
-  }
+}
 
 Person::~Person(){ }
 
-string Person::get_nom(){ return nom;}
+string Person::get_nom(){return nom;}
 void Person::set_nom(string x){nom=x;}
 
 string Person::get_appellido(){return apellido;}

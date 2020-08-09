@@ -6,15 +6,16 @@
 #define LAB02_OOP_PERSON_H
 
 
-#include <string>
+#include <sstream>
 #include <ostream>
+#include <iostream>
 using namespace std;
 
 /**
  * Abstract Class of Person
  */
 class Person {
-  private:
+protected:
    string nom;
    string apellido;
    int id;
