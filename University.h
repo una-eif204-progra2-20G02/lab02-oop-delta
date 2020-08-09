@@ -5,15 +5,14 @@
 #ifndef LAB02_OOP_UNIVERSITY_H
 #define LAB02_OOP_UNIVERSITY_H
 
-#include <iostream>
 #include <vector>
 #include "Professor.h"
 #include "Administrative.h"
 
 class University {
 private:
-  vector<Professor> vector_prof;
-  vector<Administrative> vector_admin;
+  vector<Professor> List_Professor;
+  vector<Administrative> List_Administrative;
   string name;
   Professor* professor;
   Administrative* administrative;
@@ -37,6 +36,5 @@ private:
 
   void Add_Professor(Professor);
   void Add_Administrative(Administrative);
-  void command();
 };
 #endif //LAB02_OOP_UNIVERSITY_H

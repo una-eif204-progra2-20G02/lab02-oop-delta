@@ -6,7 +6,7 @@
 #define LAB02_OOP_PROFESSOR_H
 #include "Person.h"
 
-class Professor: public Person {
+class Professor: public Person, public error_code {
   private:
    double monthly_salary;
    double commission_rate;
