@@ -13,10 +13,10 @@ class Professor: public Person, public error_code {
   
  public:
   //Professor(double,double);
-  Professor(string,string,int,double,double);
+  Professor(string = " ",string = " ",int = 0,double = 0,double = 0);
   virtual ~Professor();
 
-  double get_monthly_salary() const;
+  double get_monthly_salary();
   void set_monthly_salary(double);
 
   double get_commission_rate();
