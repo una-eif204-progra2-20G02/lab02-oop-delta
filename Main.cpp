@@ -17,4 +17,5 @@ int main() {
     uni1.Add_Administrative(admin1);
     uni1.Add_Administrative(admin2);
     uni1.get_Administrative_List();
+    std::cout<<uni1.toString();
 }

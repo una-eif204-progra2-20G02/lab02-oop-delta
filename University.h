@@ -38,5 +38,7 @@ class University {
 
   void Add_Professor(Professor);
   void Add_Administrative(Administrative);
+
+  string toString();
 };
 #endif //LAB02_OOP_UNIVERSITY_H
