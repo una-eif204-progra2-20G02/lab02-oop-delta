@@ -16,7 +16,7 @@ class Professor: public Person, public error_code {
   Professor(string = " ",string = " ",int = 0,double = 0,double = 0);
   virtual ~Professor();
 
-  double get_monthly_salary();
+  double get_monthly_salary() const;
   void set_monthly_salary(double);
 
   double get_commission_rate();

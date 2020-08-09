@@ -11,7 +11,7 @@ class Administrative: public Person {
 
 public:
   Administrative(double);
-  Administrative(string, string, int, double);
+  Administrative(string = " ",string = " ", int = 0, double = 0);
   ~Administrative();
 
   void set_monthly_salary(double);

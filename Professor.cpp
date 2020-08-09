@@ -20,7 +20,7 @@ void Professor::set_monthly_salary(double month){
     monthly_salary=month;
 }
 
-double Professor::get_monthly_salary(){
+double Professor::get_monthly_salary()const{
     return monthly_salary;
 }
 
